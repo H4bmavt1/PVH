@@ -1,0 +1,31 @@
+.btn {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.5);
+  color: #ff4e00;
+}
+
+.btn_active {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,15 @@
+.title {
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  border-top: 1px #000 solid;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,45 @@
+.container {
+  height: 400px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  font-size: 50px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  word-spacing: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    height: 350px;
+  }
+  .text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    height: 250px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}

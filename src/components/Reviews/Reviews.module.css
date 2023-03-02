@@ -1,0 +1,107 @@
+.reviews {
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.header {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.wapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transform: translate(100%, -100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide__active {
+  position: relative;
+  transform: translate(0, 0);
+  display: block;
+}
+
+.slide__next {
+  position: absolute;
+  top: 0;
+  display: block;
+  transform: translate(100%, 0);
+}
+
+.slide__prev {
+  position: absolute;
+  top: 0;
+  display: block;
+  transform: translate(-100%, 0);
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.name {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.name__span {
+  color: #888;
+}
+
+.location {
+  color: #ff4e00;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.text {
+  color: #959596;
+  padding: 0 100px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btn__prev {
+  left: 10px;
+}
+
+.btn__next {
+  right: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .text {
+    padding: 0 40px;
+  }
+  .header {
+    font-size: 32px;
+  }
+}

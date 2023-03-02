@@ -1,0 +1,40 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  width: 30px;
+  color: #fff;
+  background-color: #000;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page_active {
+  transform: scale(1.3);
+  background-color: #ff4e00;
+}
+
+.page:hover {
+  background-color: #ff4e00;
+}

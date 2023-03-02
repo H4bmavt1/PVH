@@ -1,0 +1,146 @@
+.title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  padding-top: 30px;
+  border-top: 1px solid #000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  padding: 50px 40px;
+  padding-right: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 30px;
+  background-color: #f7f7f7;
+  border: #ebeeef 1px solid;
+}
+
+.icon {
+  font-size: 30px;
+  color: #ff4e00;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+.itemHeader {
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.itemText {
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #2a8490;
+}
+
+@media screen and (max-width: 991px) {
+  .list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .item {
+    padding-left: 50px;
+    grid-column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .item {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  .icon {
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .itemHeader {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .itemText {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
+.submit {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.submit:hover {
+  background-color: #ff4e00;
+}
+
+.form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.formLeft {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.formRight {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px auto;
+  grid-gap: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .formLeft {
+    grid-gap: 10px;
+  }
+  .submit {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+}

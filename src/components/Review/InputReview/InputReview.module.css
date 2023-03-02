@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+}
+
+.avata {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.form {
+  flex-grow: 1;
+  display: flex;
+}
+
+.formControl {
+  width: 100%;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  /* overflow: hidden; */
+}
+
+.line {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  height: 3px;
+  width: 100%;
+  z-index: 100;
+  background-color: #ff4e00;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:focus + .line,
+input:valid + .line {
+  left: 0;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.submit:hover {
+  background-color: #ff4e00;
+}
+
+.text {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: underline;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  color: #ff4e00;
+}
+
+@media screen and (max-width: 575px) {
+  .input {
+    font-size: 16px;
+  }
+  .submit {
+    font-size: 16px;
+  }
+}

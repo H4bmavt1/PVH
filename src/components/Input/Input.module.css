@@ -1,0 +1,75 @@
+.container {
+  padding-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.input {
+  padding: 10px 5px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.label {
+  position: absolute;
+  padding-left: 5px;
+  left: 0;
+  top: 37px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.line {
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  height: 3px;
+  width: 100%;
+  background-color: #ff4e00;
+  transition: all 0.3s ease;
+}
+
+.input:focus + .label,
+.input:valid + .label {
+  top: 15px;
+  font-size: 18px;
+  color: #ff4e00;
+}
+
+.input:focus ~ .line::before,
+.input:valid ~ .line::before {
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .label {
+    font-size: 16px;
+  }
+  .input {
+    font-size: 16px;
+  }
+  .input:focus + .label,
+  .input:valid + .label {
+    top: 5px;
+    font-size: 18px;
+    color: #ff4e00;
+  }
+}
+
+.error {
+  margin: 5px 0;
+  padding-left: 5px;
+  color: red;
+}

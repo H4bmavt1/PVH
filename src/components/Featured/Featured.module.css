@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.list {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+/* .list__bgc {
+  position: relative;
+  opacity: 0;
+} */
+
+.list__active {
+  position: relative;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.list__prev {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.list__next {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+  background-color: transparent;
+  line-height: 100%;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.btn__circle {
+  border: none;
+  outline: none;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #000;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transform-origin: center;
+  border: 1px #000 solid;
+  transition: all 0.2s ease;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.btn__circle:hover {
+  transform: scale(1.2);
+}
+
+.btn__circle_active {
+  background-color: #fff;
+  transform: scale(1.2);
+}
+
+.btn__prev {
+  margin-left: auto;
+}
+
+.btn__next {
+  margin-right: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

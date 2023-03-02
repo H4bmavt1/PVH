@@ -1,0 +1,143 @@
+.top {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.card__icon {
+  font-size: 35px;
+  color: #444;
+}
+
+.card__title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #444;
+  height: 50px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.card__text {
+  max-width: 300px;
+  margin: 20px auto 30px auto;
+  color: #444;
+  font-size: 15px;
+}
+
+.card__btn {
+  border: 2px #ff4e00 solid;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__btn a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.card__btn__bgc {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 110%;
+  width: 200%;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ff4d0070 5px,
+    transparent 5px 8px,
+    #ff4e0070 8px 13px,
+    transparent 13px 16px
+  );
+  transform: scaleX(0);
+  opacity: 0;
+  transform-origin: 25% 0;
+  background-position: -50px 0;
+  transition: transform 0.4s ease, opacity 0.2s ease,
+    background-position 0.6s ease;
+}
+
+.card__btn:hover .card__btn__bgc {
+  transform: scaleX(1);
+  opacity: 1;
+  background-position: 50px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .top {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .card__text {
+    max-width: 100%;
+  }
+  .card__title {
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+.bottom {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-column-gap: 20px;
+  width: 100%;
+}
+
+.step__content {
+  align-self: center;
+}
+
+.step__title {
+  margin-top: 0;
+  font-size: 16px;
+  color: #ff4e00;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.step__text {
+  margin-top: 0;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.step__icon {
+  font-size: 25px;
+  display: flex;
+  padding: 15px;
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  border: 2px #777 solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .bottom {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

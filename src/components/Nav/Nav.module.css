@@ -1,0 +1,405 @@
+.contact {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  font-size: 16px;
+}
+
+.contact__title {
+  color: #777;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contact__phone {
+  color: #777;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.contact__phone_icon {
+  font-size: 20px;
+  color: #ff4e00;
+  margin-right: 5px;
+}
+
+.nav {
+  background-color: #fff;
+}
+
+.nav__container {
+  background-color: #fff;
+  padding: 20px 40px 0 40px;
+}
+
+.nav__top {
+  position: relative;
+  height: 75px;
+}
+
+.nav__btnGroup {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__btn_toggle {
+  display: none;
+}
+
+.nav__btn_toggle i {
+  font-size: 20px;
+  color: #000;
+  display: block;
+}
+
+.nav__logo {
+  height: 100%;
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__logo a {
+  display: block;
+  width: 50%;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.nav__item {
+  background-color: transparent;
+  margin: 0 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav__list_scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.nav__link {
+  font-size: inherit;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav__icon {
+  font-size: 18px;
+  margin-left: 3px;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+
+.nav__link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav__link:hover .nav__icon {
+  transform: rotate(-90deg);
+}
+
+.nav__btn {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav__btn_card {
+  border: 1px #000 solid;
+  position: relative;
+  padding: 15px 17px;
+  margin-right: 5px;
+  margin-left: 15px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.nav__btn_card:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.nav__card_text {
+  margin-right: 5px;
+}
+
+.nav__number {
+  border-radius: 50%;
+  color: #fff;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.nav__sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  width: max-content;
+  min-width: 100%;
+  background-color: #000;
+  transition: height 0.3s ease-in-out;
+  z-index: 5;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.nav__sub_item {
+  font-size: 20px;
+}
+
+.nav__sub_link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__sub_link:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.avata {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px #000 solid;
+}
+
+.accountContainer {
+  position: relative;
+}
+
+.accountList {
+  position: absolute;
+  top: calc(100% + 3px);
+  right: 0;
+  width: max-content;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.nav__btn {
+  position: relative;
+}
+
+.nav__btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 100%;
+  height: 6px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.nav__btn:hover + .accountList {
+  height: 92.5px;
+}
+
+.accountList:hover {
+  height: 92.5px;
+}
+
+.accountItem {
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.accountBtn {
+  font-size: 18px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.accountBtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__sub {
+    position: relative;
+    top: unset;
+    left: unset;
+    padding-left: 30px;
+    background-color: #fff;
+    margin-top: 0;
+  }
+  .nav__sub_link {
+    color: #000;
+  }
+  .nav__sub_link:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  .contact {
+    display: none;
+  }
+  .nav {
+    height: 45px;
+  }
+  .nav__list {
+    padding-top: 30px;
+    position: fixed;
+    left: -100%;
+    height: calc(100vh - 45px);
+    background-color: #fff;
+    top: 45px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav__item {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  .nav__list_active {
+    left: 0;
+  }
+  .nav__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 0 10px;
+    height: 45px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.7);
+  }
+  .nav__link {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__top {
+    height: 45px;
+  }
+  .nav__logo {
+    font-size: 25px;
+  }
+  .nav__btn_toggle {
+    display: block;
+    width: 68px;
+    text-align: start;
+  }
+  .nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .nav__logo a {
+    border: none;
+    width: max-content;
+    line-height: 45px;
+    padding: 0;
+  }
+  .nav__btnGroup {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    display: flex;
+    align-items: center;
+  }
+  .nav__btn_card {
+    padding: 0;
+    border: none;
+  }
+  .nav__btn_card:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .nav__btn_card .nav__card_text {
+    display: none;
+  }
+  .nav__number {
+    top: -10px;
+    right: -10px;
+  }
+  .avata {
+    width: 30px;
+    height: 30px;
+  }
+}

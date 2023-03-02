@@ -1,0 +1,99 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 30px;
+  grid-template-rows: repeat(3, min-content);
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+}
+
+.avata {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.comment {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.control {
+  display: flex;
+  grid-column: 2/3;
+}
+
+.remove {
+  grid-column: 3/4;
+  grid-row: 1/4;
+  display: block;
+  font-size: 18px;
+  padding: 5px;
+  align-self: center;
+  height: min-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove:hover {
+  color: #ff4e00;
+}
+
+.control_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control_icon {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.control_res {
+  border: none;
+  background-color: #fff;
+  outline: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.date {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}

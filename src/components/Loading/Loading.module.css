@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-top: 7px solid #000;
+  border-bottom: 7px solid #000;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-radius: 50%;
+  animation-name: roll;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
